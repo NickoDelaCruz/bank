@@ -9,6 +9,7 @@
     <title>Bank Account</title>
   </head>
   <body>
+    <h1>BIG MONEY BANK</h1>
     <div class="container">
       <form id="new-account">
         <div class="form-group well">
@@ -22,11 +23,13 @@
 
       <form id="existing-account">
         <div class="form-group well">
+          <select id="accounts" class="form-control"></select>
           <label for="withdraw">Withdraw </label>
           <input id="withdraw" class="form-control" type="number">
           <label for="deposit">Deposit: </label>
           <input id="deposit" class="form-control" type="number">
           <button type="submit" class="btn btn-success">Do The Thing</button>
+          <h2> Here is your balance: <span id="balance"></span> </h2>
         </div>
       </form>
     </div>
