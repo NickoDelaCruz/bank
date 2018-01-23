@@ -3,6 +3,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: top center;
+  height: 100%;
+}
+
+#chain {
+  background-image: url("../img/chain.png");
+  background-size: cover;
+  height: 100%;
+  position: absolute;
 }
 
 h1 {
@@ -15,8 +24,13 @@ h1 {
   background-color: #88cc88aa;
   border-radius: 3em;
   border-width: 0px;
+
 }
 
 .container {
-  max-width: 20em;
+  max-width: 40em;
+}
+
+h2 {
+  display: none;
 }

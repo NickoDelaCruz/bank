@@ -14,6 +14,7 @@ Account.prototype.deposit = function(amount) {
 
 function updateBalance (amount) {
   $("#balance").text(amount)
+  $("h2").fadeIn();
 }
 
 var accounts = Array(0);

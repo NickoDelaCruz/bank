@@ -9,29 +9,33 @@
     <title>Bank Account</title>
   </head>
   <body>
-    <h1>BIG MONEY BANK</h1>
-    <div class="container">
-      <form id="new-account">
-        <div class="form-group well">
-          <label for="name">Name: </label>
-          <input id="name" class="form-control" type="text">
-          <label for="initialDeposit"> Enter Deposit: </label>
-          <input id="initialDeposit" class="form-control" type="number">
-          <button type="submit" class="btn btn-success">Create Account</button>
-        </div>
-      </form>
+    <div id="chain">
+      <h1>BIG MONEY BANK</h1>
+      <div class="container">
+        <form id="new-account">
+          <div class="form-group well">
+            <label for="name">Name: </label>
+            <input id="name" class="form-control" type="text">
+            <label for="initialDeposit"> Enter Deposit: </label>
+            <input id="initialDeposit" class="form-control" type="number">
+            <button type="submit" class="btn btn-success">Create Account</button>
+          </div>
+        </form>
 
-      <form id="existing-account">
-        <div class="form-group well">
-          <select id="accounts" class="form-control"></select>
-          <label for="withdraw">Withdraw </label>
-          <input id="withdraw" class="form-control" type="number">
-          <label for="deposit">Deposit: </label>
-          <input id="deposit" class="form-control" type="number">
-          <button type="submit" class="btn btn-success">Do The Thing</button>
-          <h2> Here is your balance: <span id="balance"></span> </h2>
-        </div>
-      </form>
+        <form id="existing-account">
+          <div class="form-group well">
+            <label for="accounts"> Account: </label>
+            <select id="accounts" class="form-control"></select>
+            <label for="withdraw">Withdraw </label>
+            <input id="withdraw" class="form-control" type="number">
+            <label for="deposit">Deposit: </label>
+            <input id="deposit" class="form-control" type="number">
+            <button type="submit" class="btn btn-success">Do The Thing</button>
+            <h2> Here is your balance: <span id="balance"></span> </h2>
+          </div>
+        </form>
+      </div>
     </div>
+
   </body>
 </html>
