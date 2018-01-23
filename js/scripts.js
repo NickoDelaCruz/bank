@@ -17,6 +17,24 @@ function updateBalance (amount) {
   $("h2").fadeIn();
 }
 
+function withdrawAnim() {
+  $('#chain').css('background-image', 'url(img/raining.webp)');
+  var id = setInterval(frame, 2000);
+  function frame() {
+    $('#chain').css('background-image', 'url(img/chain.png)');
+    clearInterval(id);
+  }
+}
+
+function depositAnim() {
+  $('#chain').css('background-image', 'url(img/shovel.gif)');
+  var id = setInterval(frame, 2000);
+  function frame() {
+    $('#chain').css('background-image', 'url(img/chain.png)');
+    clearInterval(id);
+  }
+}
+
 var accounts = Array(0);
 var account;
 $(document).ready(function() {
@@ -39,13 +57,16 @@ $(document).ready(function() {
     var value = $("#withdraw").val();
     if (value !== "") {
       value = parseInt(value);
-      if (value <= account.balance)
+      if (value <= account.balance) {
         account.withdraw(value);
+        withdrawAnim();
+      }
     }
     value = $("#deposit").val();
     if (value !== "") {
       value = parseInt(value);
       account.deposit(value);
+      depositAnim();
     }
     $("#withdraw").val("");
     $("#deposit").val("");
