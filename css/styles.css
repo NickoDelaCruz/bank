@@ -22,7 +22,7 @@ h1 {
 
 .well {
   background-color: #88cc88aa;
-  border-radius: 3em;
+  border-radius: 2em;
   border-width: 0px;
 
 }
@@ -33,4 +33,5 @@ h1 {
 
 h2 {
   display: none;
+  text-align: center;
 }
